@@ -115,9 +115,8 @@ const listschema={
 //crete collection means table 
 const List= mongoose.model("List",listschema);
 
-app.get('/:customlist', checkUserAuth);
- function checkUserAuth(req,res,next){
-  const customlist=_.capitalize(req.params.customlist);
+  app.get("/:customlist", async(req,res)=>{
+  const customlist=await(_.capitalize(req.params.customlist));
    
   List.findOne({name:customlist},(err,founddata)=>{
     if(!err){
@@ -147,7 +146,7 @@ app.get('/:customlist', checkUserAuth);
   })
   listdata.save();
 
-}
+});
 // delete record db
 
 app.post("/delete",(req,res)=>{
