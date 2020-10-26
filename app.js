@@ -115,7 +115,7 @@ const listschema={
 //crete collection means table 
 const List= mongoose.model("List",listschema);
 
-app.get('/app/:customlist', checkUserAuth);
+app.get('/:customlist', checkUserAuth);
  function checkUserAuth(req,res,next){
   const customlist=_.capitalize(req.params.customlist);
    
