@@ -20,5 +20,13 @@
     "mongodb": "^3.6.2",
     "mongoose": "^5.10.9"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmayu2020/ToDoList.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wmayu2020/ToDoList/issues"
+  },
+  "homepage": "https://github.com/wmayu2020/ToDoList#readme"
 }
