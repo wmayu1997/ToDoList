@@ -7,6 +7,7 @@ const mongoose=require("mongoose");
 const { Console } = require("console");
 mongoose.set('useFindAndModify', false);
 const daytime=require(__dirname+"/date.js");
+const port=process.env.PORT||8000;
 // const ejs=require("ejs");
 const app= express();
 // // const staticpath=path.join(__dirname+"/public");
@@ -183,6 +184,6 @@ app.post("/delete",(req,res)=>{
  
 
  
-app.listen(8000,()=>{
+app.listen(port,()=>{
     console.log("Hii I am Listen");
 })

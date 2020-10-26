@@ -8,6 +8,10 @@
   },
   "author": "mayuri",
   "license": "ISC",
+  "engines": {
+    "node": "12.18.3"
+  },
+
   "dependencies": {
     "animate.css": "^4.1.1",
     "body-parser": "^1.19.0",
